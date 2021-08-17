@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+h2, p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+</style>
+<link rel="stylesheet" href="{% static 'css/mlopen.css' %}"></link>
+
+</head>
+<body>
+
+<div class="sidenav">
+    <img class="img_start" src="{% static '/images/mlicon.png' %}" alt="""/>
+  <a href="{% url 'mlopenapp:import' %}"><img class="icon_start" src="{% static '/images/mlicon.png' %}" alt="""/>Import Pipelines</a>
+  <a href="{% url 'mlopenapp:data' %}"><img class="icon_data" src="{% static '/images/dataicon.png' %}" alt="""/>Import Data</a>
+  <a href="{% url 'mlopenapp:pipelines' %}"><img class="icon_pipeline" src="{% static '/images/pipeicon.png' %}" alt="""/>Run Pipelines</a>
+</div>
+<div class="sidenav2">
+
+</div>
+
+{% block main %}
+
+<div class="main">
+  <h2>MLOPEN: CREATE, DEPLOY AND SHARE MACHINE LEARNING PIPELINES</h2>
+  <p>Hello User!</p>
+</div>
+
+{% endblock %}
+
+</body>
+</html>

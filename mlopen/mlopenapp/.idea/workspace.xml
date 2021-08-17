@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="38315f69-dbcc-4c05-b2c2-0c306286284e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipelines/control.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/control.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipelines/input/text_files_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/input/text_files_input.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipelines/knn_control.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/knn_control.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pipeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/pipeline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/data.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pipelines.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pipelines.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/io_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/io_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/params_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/params_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/pipelines.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1pURrYzAc9FSF3V83kszTRDjwY6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="38315f69-dbcc-4c05-b2c2-0c306286284e" name="Default Changelist" comment="" />
+      <created>1615235881257</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615235881257</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="336" y="27" width="683" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1615238146744">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="336" y="27" width="683" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1366.741@0.27.1366.741" timestamp="1615238146744" />
+    <state x="346" y="89" key="search.everywhere.popup" timestamp="1615245929808">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="346" y="89" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1615245929808" />
+  </component>
+</project>

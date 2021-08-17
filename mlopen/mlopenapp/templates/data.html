@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+
+<script src="{% static '3rd_party/js/jquery-3.3.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'datatables/datatables.min.js' %}"></script>
+<script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static '3rd_party/js/plotly-latest.min.js'' %}"></script>
+<script src="{% static 'js/pipeline.js' %}"></script>
+<link rel="stylesheet" href="{% static 'css/chosen.css' %}"></link>
+
+<div class="container">
+<form method="POST" class="post-form" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+
+    {% if form.name %}
+    <div class="left">
+        <p>Insert name</p>
+        <div class="innerleft">
+            {{ form.name.errors }}
+            {{ form.name }}
+        </div>
+    </div>
+    {% endif %}
+    {% if form.file %}
+    <div class="left">
+        <p>Insert {{ file_title }} file</p>
+        <div class="innerleft">
+            {{ form.file.errors }}
+            {{ form.file }}
+        </div>
+    </div>
+    {% endif %}
+    {% if form.support_files %}
+    <div class="left">
+        <p>Insert support files</p>
+        <div class="innerleft">
+            {{ form.support_files.errors }}
+            {{ form.support_files }}
+        </div>
+    </div>
+    {% endif %}
+        <button type="submit" class="save btn btn-default">Save</button>
+</form>
+</div>
+<hr>
+{% endblock %}

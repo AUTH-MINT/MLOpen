@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load static %}
+{% load bootstrap4 %}
+
+{% block main %}
+
+<script src="{% static '3rd_party/js/jquery-3.3.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'datatables/datatables.min.js' %}"></script>
+<script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static '3rd_party/js/plotly-latest.min.js'' %}"></script>
+<script src="{% static 'js/pipeline.js' %}"></script>
+<link rel="stylesheet" href="{% static 'css/chosen.css' %}"></link>
+
+
+<div class="container" id="pipeline_select">
+     <div class="left">
+    <p>Select action</p>
+         <form id="type" action="" method="post">
+        {% csrf_token %}
+
+        {{ form.type }}
+    </form>
+  </div>
+  <div class="left">
+    <p>Select pipeline</p>
+     <form id="pipelines" action="" method="post">
+        {% csrf_token %}
+
+        {{ form.pipelines }}
+    </form>
+  </div>
+  <div class="left">
+    <p>Select data</p>
+         <form id="files" action="" method="post">
+        {% csrf_token %}
+
+        {{ form.input }}
+    </form>
+  </div>
+    <button id="submit_btn" class="save">Run</button>
+</div>
+
+<div class="container" id="pipeline_results">
+    <div id="wait"><h3>Please select a valid pipeline and input data</h3></div>
+    <div id="warpper" class="warpper">
+      <input class="radio" id="graphtab" name="group" type="radio" value="Graphs" checked>
+      <input class="radio" id="listtab" name="group" type="radio" value="Lists">
+      <input class="radio" id="texttab" name="group" type="radio" value="Text">
+      <div class="tabs">
+      <label class="tab" id="one-tab" for="graphtab">Graphs</label>
+      <label class="tab" id="two-tab" for="listtab">Lists</label>
+      <label class="tab" id="three-tab" for="texttab">Text</label>
+    </div>
+    </div>
+</div>
+
+<hr id="tab-bottom-hr">
+
+<div class="container" id="attrs"></div>
+<div id="main_content">
+        <div class="loader" id="loader">Loading...</div>
+        <div id="errdiv"></div>
+            <div id="graphs"></div>
+            <div id="table_wrapper">
+            <div class="table">
+            <table class="styled-table" id="table" width="100%">
+            </table>
+            <div id="table_error"></div>
+        </div>
+    </div>
+    <div id="text"></div>
+</div>
+
+{% endblock %}
